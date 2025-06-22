@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <title>Research Assistant</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>🔍 Research Assistant</h1>
+    </header>
+
+    <div class="actions">
+      <button id="summarizeBtn" class="modern-btn">🧠 Summarize</button>
+    </div>
+
+    
+
+    <div id="results" class="results-box"></div>
+
+    <div id="loadingSpinner" class="hidden">
+    <div class="spinner"></div>
+    <p>Processing...</p>
+</div>
+
+
+
+
+    <div class="notes-section">
+      <h3>📝 Research Notes</h3>
+      <textarea id="notes" placeholder="Write your notes here..."></textarea>
+
+        <div class="translate-section">
+  <label for="language">🌐 Translate to:</label>
+  <select id="languageSelect">
+    <option value="Hindi">Hindi</option>
+    <option value="Marathi">Marathi</option>
+    <option value="German">German</option>
+  </select>
+  <button id="translateBtn" class="modern-btn secondary">🌐 Translate</button>
+</div>
+
+<div id="voice-note-controls">
+  <button id="startRecordingBtn" class="modern-btn">🎤 Start Recording</button>
+  <button id="stopRecordingBtn" class="modern-btn">⏹ Stop Recording</button>
+  <button id="saveRecordingBtn" class="modern-btn">💾 Save Voice Note</button>
+  <audio id="audioPreview" controls class="hidden"></audio>
+</div>
+
+
+      <div class="notes-buttons">
+        <button id="saveNotesBtn" class="modern-btn">💾 Save Notes</button>
+        <button id="viewNotesBtn" class="modern-btn secondary">📂 View Saved Notes</button>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
+
+<div id="toast" class="toast hidden">Message</div>
